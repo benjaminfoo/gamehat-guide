@@ -10,7 +10,7 @@ This steps are necessary to get the rpi up and running properly.
 * Assemble WaveShares Game-HAT
 * Download the latest RetroPie image to your computer
 * Flash the image to the sdcard via etcher / dd / win32diskimager 
-  * **(Optional)** Create a .ssh file on sdcard/boot to enable the secure shell server
+  * **(Optional)** Create a ssh file on sdcard/boot to enable the secure shell server
   * **(Optional)** Create a wpa_supplicant.conf within the same directory to enable headless wifi
 * Insert the sdcard into the raspberry pi and power it on
 

@@ -14,6 +14,19 @@ This steps are necessary to get the rpi up and running properly.
   * **(Optional)** Create a wpa_supplicant.conf within the same directory to enable headless wifi
 * Insert the sdcard into the raspberry pi and power it on
 
+### Example for wpa_supplicant.conf
+This is an example configuration for the wpa_supplicant application - change it to your needs.
+```
+country=DE
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="set ssid here"
+    psk="set pre-shared key here"
+}
+```
+
 ## Setup
 These steps are required to get the Game-HAT hardware working properly.
 

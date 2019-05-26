@@ -66,6 +66,11 @@ sudo apt-get upgrade
 sudo reboot
 ``
 
+### mount usb-drive 
+Open fstab file using ```sudo nano /etc/fstab``` - append the following line:
+```/dev/sda1 /media/usb1 auto defaults 0 0```
+
+
 # Additional information / resources
  * https://www.waveshare.com/wiki/Game_HAT
  * https://retropie.org.uk/

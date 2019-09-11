@@ -70,6 +70,19 @@ sudo reboot
 Open fstab file using ```sudo nano /etc/fstab``` - append the following line:
 ```/dev/sda1 /media/usb1 auto defaults 0 0```
 
+### Log in to emulationstation on boot 
+In retropie setup script > Configuration / tools > autostart > Start EmulationStation at Boot
+
+### Install famicon-mini-theme
+In retropie setup script > Configuration / tools > esthemes > Install ruckage/famicom-mini
+
+### Install xfce desktop-environment
+sudo apt-get install --no-install-recommends xserver-xorg
+sudo apt-get install --no-install-recommends xinit
+sudo apt-get install xfce4 xfce4-terminal
+
+### FAQ: Where are emulationstation-themes stored?
+The themes are stored in: /etc/emulationstation/themes/
 
 # Additional information / resources
  * https://www.waveshare.com/wiki/Game_HAT

@@ -33,7 +33,7 @@ These steps are required to get the Game-HAT hardware working properly.
 ### Connect to the raspberry-pi
 ``ssh pi@<ip-adress> (the default RetroPie-password is "raspberry")``
 
-### Download the drivers from www.gameshare.com
+### Download the drivers from www.waveshare.com
 ``wget https://www.waveshare.com/w/upload/b/b4/Game-HAT-180720.tar.gz``
 
 ### Extract the driver archive

@@ -84,7 +84,30 @@ sudo apt-get install xfce4 xfce4-terminal
 ### FAQ: Where are emulationstation-themes stored?
 The themes are stored in: /etc/emulationstation/themes/
 
+# Performance
+## Analyze bootup performance
+systemd-analyze blame
+
+## Disable bluetooth
+* sudo nano /boot/config.txt
+* add "dtoverlay=pi3-disable-bt" to the bottom of the file
+* save and close your editor of choice
+
+## Disable bluetooth services
+sudo systemctl disable hciuart.service
+sudo systemctl disable bluealsa.service
+sudo systemctl disable bluetooth.service
+
+## Disable samba / netbios daemon
+sudo systemctl stop smbd
+sudo systemctl disable smbd
+sudo systemctl stop nmbd
+sudo systemctl disable nmbd
+
+
+
 # Additional information / resources
  * https://www.waveshare.com/wiki/Game_HAT
  * https://retropie.org.uk/
  * https://emulationstation.org/
+ * https://scribles.net/disabling-bluetooth-on-raspberry-pi/

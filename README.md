@@ -50,8 +50,7 @@ If you're interested in further steps in order to optimize some aspects of the d
 
 # Post-Setup
 These steps enhance the overall experience of the system.
-The previous steps are targeted towards general use, but because im a 
-very picky person, I like to modify some things to increase usability, boot- update- and compile-times, etc:
+The previous steps are targeted towards increased usability, boot- update- and compile-times, etc:
 
 #### Change the default password
 ``passwd``

@@ -90,18 +90,19 @@ systemd-analyze blame
 ## Disable bluetooth
 * sudo nano /boot/config.txt
 * add "dtoverlay=pi3-disable-bt" to the bottom of the file
+* add "dtoverlay=disable-bt" for newer versions
 * save and close your editor of choice
 
 ## Disable bluetooth services
-sudo systemctl disable hciuart.service
-sudo systemctl disable bluealsa.service
-sudo systemctl disable bluetooth.service
+- sudo systemctl disable hciuart.service
+- sudo systemctl disable bluealsa.service
+- sudo systemctl disable bluetooth.service
 
 ## Disable samba / netbios daemon
-sudo systemctl stop smbd
-sudo systemctl disable smbd
-sudo systemctl stop nmbd
-sudo systemctl disable nmbd
+- sudo systemctl stop smbd
+- sudo systemctl disable smbd
+- sudo systemctl stop nmbd
+- sudo systemctl disable nmbd
 
 
 
